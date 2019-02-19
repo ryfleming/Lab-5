@@ -36,6 +36,9 @@ Estimated Time (minutes):
 11. 10
 12. 10
 13. 10
+14. 10
+15. 10
+16. 10
 
 Actual Time (minutes):
 1. 25
@@ -51,4 +54,7 @@ Actual Time (minutes):
 11. 10
 12. 10
 13. 15
+14. 10
+15. 15
+16. 15
 */}

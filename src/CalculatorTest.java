@@ -85,7 +85,18 @@ public class CalculatorTest {
      */
     public void calculateThreeTokensTestValidAdd() throws AssertException
     {
-        // TODO: complete this test...
+        try
+        {
+        	int result = Calculator.calculateThreeTokens(new String[] {"5", "+", "5"});
+        	Assert.assertEquals(10, result);
+        	
+        	int result2 = Calculator.calculateThreeTokens(new String[] {"-5", "+", "-5"});
+        	Assert.assertEquals(-10, result2);
+        }
+        catch (Exception e) 
+        {
+        	Assert.fail("Logical operation threw an exception: " + e.getMessage());
+        }
     }
 
     /**
@@ -93,7 +104,18 @@ public class CalculatorTest {
      */
     public void calculateThreeTokensTestValidSubtract() throws AssertException
     {
-        // TODO: complete this test...
+    	try
+        {
+        	int result = Calculator.calculateThreeTokens(new String[] {"10", "-", "5"});
+        	Assert.assertEquals(5, result);
+        	
+        	int result2 = Calculator.calculateThreeTokens(new String[] {"-5", "-", "-5"});
+        	Assert.assertEquals(0, result2);
+        }
+        catch (Exception e) 
+        {
+        	Assert.fail("Logical operation threw an exception: " + e.getMessage());
+        }
     }
 
     /**
@@ -101,7 +123,18 @@ public class CalculatorTest {
      */
     public void calculateThreeTokensTestValidDivide() throws AssertException
     {
-        // TODO: complete this test...
+    	try
+        {
+        	int result = Calculator.calculateThreeTokens(new String[] {"10", "/", "5"});
+        	Assert.assertEquals(2, result);
+        	
+        	int result2 = Calculator.calculateThreeTokens(new String[] {"-5", "/", "-5"});
+        	Assert.assertEquals(1, result2);
+        }
+        catch (Exception e) 
+        {
+        	Assert.fail("Logical operation threw an exception: " + e.getMessage());
+        }
     }
 
     /**

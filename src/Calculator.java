@@ -221,19 +221,21 @@ public class Calculator
         				return result;
         			}
         			else {
-        				result = String.format("The result is %d", response);
+        				result = String.format("The result is: %d", response);
             			return result;
         			}
         	}
         	catch(NumberFormatException nfe) 
         	{
-        		result = "Input number cannot be parsed to an int. Please Try again.";
+        		result = "Input number cannot be parsed to an int. Please try again.";
         		return result;
         	}
         	catch(CalculatorException ce)
         	{
-        		result = String.format("Calculator Exception, message is: %s", ce);
+        		result = String.format("Calculator Exception, message is: %s", ce.getMessage());
         		return result;
+        		
+        		
         	}
         	catch(ArithmeticException ae) {
         		
